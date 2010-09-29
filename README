@@ -1,0 +1,3 @@
+git clone git@github.com:steve918/smali-textmate-bundle.git 
+cd ~/Library/Application Support/TextMate/Bundles
+ln -s <git-dir>/Smali.tmbundle
