@@ -36,9 +36,15 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>^\s+[A-Za-z0-9\-\/]+</string>
+			<string>^(\s+)*[A-Za-z0-9\-\_\/]+</string>
 			<key>name</key>
 			<string>keyword.control.smali</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\s+[A-Za-z0-9\-\/\&gt;\&lt;]+(?=\()</string>
+			<key>name</key>
+			<string>entity.smali</string>
 		</dict>
 		<dict>
 			<key>match</key>
