@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>smali</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>\.method</string>
+	<key>foldingStopMarker</key>
+	<string>\.end method</string>
+	<key>name</key>
+	<string>Smali</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.smali</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(#).*$\n?</string>
+			<key>name</key>
+			<string>comment.line.number-sign.smali</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(v\d|p\d)</string>
+			<key>name</key>
+			<string>variable.smali</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\s+[A-Za-z0-9\-\/]+</string>
+			<key>name</key>
+			<string>keyword.control.smali</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\.end method|^(\s+)*\.[A-Za-z0-9\-\/]+</string>
+			<key>name</key>
+			<string>support.smali</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.quoted.double.smali</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\.</string>
+					<key>name</key>
+					<string>constant.character.escape.smali</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.smali</string>
+	<key>uuid</key>
+	<string>2AAE65F0-7968-4596-AF09-0218DDBCBD81</string>
+</dict>
+</plist>
